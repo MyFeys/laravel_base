@@ -1,0 +1,52 @@
+- 为简化开发工作、提高生产率而生
+- 只做增强不做改变，简化CRUD操作
+## 自建Artisan高效率crud优点
+- **无侵入**：可在 laravel 原有框架的基础上进行扩展，只做增强不做改变，引入 Artisan 命令行 不会对您现有的 laravel 构架产生任何影响，而且支持所有 laravel 原生的特性
+- **无依赖**：不依赖任何扩展包及插件
+- **无损耗**：不启动及自动加载任何外部代码
+- **预防Sql注入**：内置Sql注入剥离器，有效预防Sql注入攻击
+- **通用CRUD操作**：通过Artisan命令行，仅仅通过少量配置即可实现单表大部分 CRUD 操作，更有强大的条件构造器，满足各类使用需求
+- **多命令支持**：后续有时间我们还会不断扩展新的命令行。
+- **支持权限控制**：基于laravel本身的Auth验证的权限管理系统
+- **支持无限级分类**：支持无限级父子级权限继承，父级的管理员可任意增删改子级管理员及权限设置
+- **内置分页插件**：基于laravel分页，开发者无需关心具体操作
+- **支持单管理员多角色**：可进行角色部门进行分级管理操作
+- **支持权限节点**：支持目录和控制器结构一键生成权限节点
+- **基于Bootstrap开发，自适应手机、平板、PC**：
+- **基于layuiadmin开发**：支持layui的所有操作
+- **基于百度编辑器ueditor开发**：支持ueditor编辑器的所有操作
+- **基于七牛云图片开发**：支持七牛云上传及插件的所有操作
+## 代码授权
+   您如果全部使用本代码进行商业发布，需通过 layuiadmin 的购买授权！或者您可以拷贝本系统部分代码。
+## 安装步骤
+- git clone  https://github.com/MyFeys/laravel55_base.git
+- 复制.env.example为.env 命令：（cp .env.example .env）
+- 配置.env里的数据库连接信息(如果感觉在.env文件中不安全可迁移至config配置文件里)
+- 修改config里的database数据库连接信息
+- composer update
+- php artisan migrate
+- php artisan db:seed
+- php artisan key:generate
+- php artisan cache:clear
+- 登录后台：host/admin   帐号：root  密码：123456
+
+- 1、后台部分：
+- //生成test表的CRUD
+- php artisan crud:table test --t 1
+- //也可以生成admin二级目录式test表的CRUD
+- php artisan crud:table admin/test --t 1
+- //删除test表生成的CRUD
+- php artisan crud:table test --t 0
+- //删除test表二级目录生成的CRUD
+- php artisan crud:table admin/test --t 0
+- //生成test表的CRUD且生成对应的控制器为testlog
+- php artisan crud:table admin/test --t 1 --c testlog
+- 2、接口与前台部分：
+- //生成test API接口控制器
+- php artisan api test --t 1
+- //删除test API接口控制器
+- php artisan api test --t 0
+- //生成user二级目录下的test API接口控制器
+- php artisan api user/test --t 1
+- //删除user二级目录下的test API接口控制器
+- php artisan api user/test --t 0

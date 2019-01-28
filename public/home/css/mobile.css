@@ -1,0 +1,288 @@
+html, body, ul, li, p, span, a {
+    padding: 0;
+    margin: 0;
+    font-size: 0.1rem;
+}
+body {
+    background: #f0f0f0;
+}
+.header {
+    width: 100%;
+    height: .38rem;
+    line-height: .38rem;
+    background: #000000;
+    margin: 0 auto;
+}
+.header ul {
+    width: 92%;
+    margin: 0 auto;
+    font-size: .3rem;
+    overflow: hidden;
+}
+.header ul li {
+    list-style: none;
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+.header ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+.header ul li a.active {
+    background: #cc3300;
+}
+
+.headernav {
+    width: 100%;
+    height: .38rem;
+    line-height: .38rem;
+    background: #000000;
+    margin: 0 auto;
+}
+.headernav ul {
+    width: 92%;
+    margin: 0 auto;
+    font-size: .3rem;
+    overflow: hidden;
+}
+.headernav ul li {
+    list-style: none;
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+.headernav ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+.headernav ul li a.active {
+    background: #cc3300;
+}
+
+.banner {
+    width: 100%;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+.info {
+    width: 98%;
+    height: auto;
+    margin: 10px auto 0;
+}
+.menu {
+    width: 100%;
+    height: 2.32rem;
+    background: #fff;
+    border-radius: 5px;
+}
+.menu ul {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.menu ul li {
+    width: 25%;
+    float: left;
+    list-style: none;
+    font-size: .24rem;
+    text-align: center;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+.menu ul li a img {
+    width: 1.2rem;
+    height: 1.2rem;
+    display: block;
+    margin: .16rem auto;
+}
+.menu .line {
+    width: 90%;
+    height: .01rem;
+    background: #1681c8;
+    margin: .3rem auto 0;
+}
+.operation_info {
+    width: 95%;
+    height: auto;
+    margin: .1rem auto;
+    border-radius: 5px;
+    background: #fff;
+    padding-bottom: 0.05rem;
+}
+
+.operation_info .title1 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.operation_info .title1 span.tit {
+    display: inline-block;
+    background: #cc3300;
+    color: #fff;
+    width: 1rem;
+    text-align: center;
+    font-size: .12rem;
+    height: .3rem;
+    line-height: .3rem;
+    margin-left: .15rem;
+}
+.operation_info .title1 span.more {
+    float: right;
+    display: inline-block;
+    color: #000;
+    width: 1rem;
+    font-size: .12rem;
+    height: .3rem;
+    text-align: center;
+    line-height: .3rem;
+}
+.pic_info {
+    width: 95%;
+    height: 1.35rem;
+    margin: 0.1rem auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.pic_info img {
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    border-radius: 8px;
+}
+
+.pic_info p {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background: rgba(0,0,0, .5);
+    font-size: .15rem;
+    color: #fff;
+    height: .28rem;
+    line-height: .28rem;
+    padding-left: .2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.operation_info ul {
+    width: 92%;
+    height: auto;
+    margin: .08rem auto;
+}
+
+.operation_info ul li {
+    line-height: .3rem;
+    list-style: none;
+    border-bottom: 1px dashed #e2e2e2;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.operation_info ul li a {
+    text-decoration: none;
+    color: #2b2b2b;
+    font-size: .12rem;
+}
+
+.operation_info ul li span{
+    text-decoration: none;
+    color: #2b2b2b;
+    font-size: .12rem;
+    float: right;
+    width: 0.7rem;
+}
+.btn {
+    width: 100%;
+    height: 0.38rem;
+    line-height: 0.38rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.btn p {
+    display: inline-block;
+    width: 33.3%;
+    text-align: center;
+    float: left;
+}
+.btn p a {
+    display: block;
+    color: #fff;
+    font-size: 0.13rem;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+.btn p.gp {
+    background: #cc3300;
+}
+.btn p.fx {
+    background: #141718;
+}
+.btn p.jy {
+    background: #7c5d17;
+}
+
+.btn_h {
+    width: 100%;
+    height: 0.45rem;
+    line-height: 0.45rem;
+}
+.mzsm{
+    line-height: 0.25rem;
+    width: 95%;
+    margin: 0.1rem auto;
+    padding: 0.1rem auto;
+    background: #ffffff;
+    text-align: center;
+}
+
+/*tab_box*/
+.whitebg {
+    background: #fff;
+    border-radius: 3px;
+    padding: 0.1rem;
+    overflow: hidden;
+    line-height: 0.25rem;
+    width: 88%;
+    height: auto;
+    margin: 0.1rem auto;
+}
+/*htitle*/
+.htitle { font-size: 16px; line-height: 40px; border-bottom: 1px solid #eee; color: #484848; font-weight: normal; position: relative; margin-bottom: 10px; }
+.htitle:after { content: ""; position: absolute; width: 60px; height: 2px; content: ""; background: #000; left: 0; bottom: 0; -moz-transition: all .5s ease; -webkit-transition: all .5s ease; transition: all .5s ease; }
+.htitle:hover:after { width: 80px; }
+
+.con_tilte { font-size: 22px; margin-top: 20px; text-align: center;}
+.con_nav { float: right; font-size: 14px; color: #666 }
+.con_nav a { color: #666 }
+.con_nav a:hover { color: #000 }
+.con_text { line-height: 24px; margin-top: 20px; }
+.con_text a { color: #09C;word-break: break-all; }
+.con_text a:hover { text-decoration: underline }
+.con_text p { margin: 15px 0; }
+.con_text img { display: block; max-width: 100% !important; height:auto !important;}
+
+.blogtext { font-size: 14px; color: #666; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 3; margin-top: 20px }
+.bloginfo { margin-top: 20px; overflow: hidden; color: #999; line-height: 34px; }
+.bloginfo span { margin: 0 5px }
+.bloginfo span a { color: #096 }
+.avatar { position: relative; float: left; width: 30px; height: 30px; border-radius: 100%; padding: 2px; display: block; background: -webkit-linear-gradient(bottom left, rgba(0,153,255,.9), rgba(42,228,197,.7)); background: -o-linear-gradient(bottom left, rgba(0,153,255,.9), rgba(42,228,197,.7)); background: linear-gradient(to top right, rgba(0,153,255,.9), rgba(42,228,197,.7)); }
+.avatar img { width: 100%; border-radius: 50%; }
+.avatar::after { content: ""; position: absolute; background-size: 12px; width: 12px; height: 12px; right: 0; bottom: 0 }
+.nextinfo a { color: #000 }
